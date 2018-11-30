@@ -1,5 +1,5 @@
 [![travis](https://travis-ci.org/mmYeung/biodemo.svg?branch=master)](https://travis-ci.org/mmYeung/biodemo)
-
+[![codecov](https://codecov.io/github/mmYeung/biodemo/graphs/badge.svg)] (https://codecov.io/github/mmYeung/biodemo)
 # Overview 
 
 This program reads one or more input FASTA files. For each file it computes a variety of statistics, and then prints a summary of the statistics as output.
