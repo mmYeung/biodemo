@@ -65,7 +65,7 @@ def parse_args():
 
     parser.add_argument('--maxlen',
 			metavar='N',
-			type=int,
+			type=None,
 			default=DEFAULT_MAX_LEN,
 			help="Maximum length sequence to include in stats (default {})".format(DEFAULT_MAX_LEN))
     parser.add_argument('--version',
