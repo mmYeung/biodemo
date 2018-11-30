@@ -1,4 +1,4 @@
-[![travis](https://travis-ci.org/USERNAME/biodemo.svg?branch=master)](https://travis-ci.org/USERNAME/biodemo)
+[![travis](https://travis-ci.org/mmYeung/biodemo.svg?branch=master)](https://travis-ci.org/mmYeung/biodemo)
 
 # Overview 
 
@@ -14,7 +14,7 @@ This program is released as open source software under the terms of [MIT License
 
 Clone this repository: 
 ```
-$ git clone https://github.com/USERNAME/biodemo
+$ git clone https://github.com/mmYeung/biodemo
 ```
 
 Move into the repository directory:
