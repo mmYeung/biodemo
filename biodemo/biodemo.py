@@ -11,7 +11,7 @@ variety of statistics, and then prints a summary of the statistics as output.
 '''
 
 from argparse import ArgumentParser
-from math import floor,inf
+from math import floor
 import sys
 import logging
 import pkg_resources
@@ -22,7 +22,7 @@ EXIT_FILE_IO_ERROR = 1
 EXIT_COMMAND_LINE_ERROR = 2
 EXIT_FASTA_FILE_ERROR = 3
 DEFAULT_MIN_LEN = 0
-DEFAULT_MAX_LEN = inf
+DEFAULT_MAX_LEN = None
 DEFAULT_VERBOSE = False
 HEADER = 'FILENAME\tNUMSEQ\tTOTAL\tMIN\tAVG\tMAX'
 PROGRAM_NAME = "biodemo"
@@ -137,7 +137,7 @@ class FastaStats(object):
         min_len = max_len = None
         for seq in SeqIO.parse(fasta_file, "fasta"):
             this_len = len(seq)
-            if this_len >= minlen_threshold and this_len <= maxlen_threshold:
+            if this_len >= minlen_threshold and maxlen_threshold is not None and this_len <= maxlen_threshold:
                 if num_seqs == 0:
                     min_len = max_len = this_len
                 else:
