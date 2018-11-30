@@ -4,3 +4,4 @@ biopython==1.66
 pylint
 coverage
 codecov
+math
